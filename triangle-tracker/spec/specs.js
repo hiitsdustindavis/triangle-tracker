@@ -12,9 +12,12 @@ describe('triangleTracker', function() {
     expect(triangleTracker(3,3,3)).to.equal(true);
   });
   it("is true when only two sides are equal", function() {
-    expect(triangleTracker(3,2,3)).to.equal(true);
+    expect(triangleTracker(3,4,3)).to.equal(true);
   });
 
+  it("is true when no sides are equal", function() {
+    expect(triangleTracker(3,4,5)).to.equal(true);
+  });
 
 });
 
