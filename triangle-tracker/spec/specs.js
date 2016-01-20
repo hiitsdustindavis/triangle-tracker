@@ -49,6 +49,8 @@ expected output= true
 (side1 === side3) && (side1 !== side2) ||  //isosceles
 (side2 === side3) && (side1 !== side3)
 
+s1=s2 || s2=s3 || s3=s1
+
 side1=2, side2=5, side3=6
 expected output= false
 

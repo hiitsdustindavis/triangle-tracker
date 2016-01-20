@@ -8,7 +8,7 @@ $(function() {
       $("#result").text("Not a triangle.");
     } else if ((side1 === side2) && (side2 === side3)) {
       $("#result").text("This forms an equilateral triangle.");
-    } else if ((side1 === side2) && (side2 !== side3) || (side1 === side3) && (side1 !== side2) || (side2 === side3) && (side1 !== side3)) {
+    } else if ((side1 === side2) || (side2 === side3) || (side1 === side3)) {
       $("#result").text("This forms an isosceles triangle.");
     } else if ((side1 !== side2) && (side2 !== side3) && (side1 !== side3)) {
       $("#result").text("This forms a scalene triangle.");
